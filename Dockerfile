@@ -11,5 +11,5 @@ COPY . .
 
 CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0"]
 
-# Build image: docker build -t flask-app-image .
-# Run the app: docker run -d --name flask-app -p 5000:5000 flask-app-image
+# Build image: docker build -t the-python-book-image .
+# Run the app: docker run -d --name the-python-book -p 5000:5000 the-python-book-image
