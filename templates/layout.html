@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
+    <head>
+      <title>The Python Book</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
   <body>
     <header>
       <div class="container">
         <h1 class="logo">The Python Book</h1>
         <strong><nav>
-            <ul class="menu">
-                <li><a href="{{ url_for('show_home') }}">The Python Book</a></li>
-                <li><a href="{{ url_for('show_contacts') }}">Contacts</a></li>
-            </ul>
+          <ul class="menu">
+            <li><a href="{{ url_for('show_home') }}">Home</a></li>
+            <li><a href="{{ url_for('show_contacts') }}">Contacts</a></li>
+          </ul>
         </nav></strong>
       </div>
     </header>
