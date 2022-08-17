@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <div class="contacts">
-      <h1>Contact list</h1>
-      <p>github: https://github.com/quartzinquartz</p>
-    </div>
+    {% extends "layout.html" %}
+    {% block content %}
+      <div class="contacts">
+        <h1>Contact List</h1>
+        <p>github: <a href="https://github.com/quartzinquartz">quartzinquartz</a></p>
+      </div>
+    {% endblock %}  
   </body>
 </html>
