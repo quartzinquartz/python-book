@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>The Python Book</title>
       <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+      <title>The Python Book</title>
     </head>
   <body>
     <header>
@@ -20,5 +21,22 @@
       {% block content %}
       {% endblock %}
     </div>
+    <!-- BEGIN SIDEBAR BLOCK -->
+    <div class="wrapper">
+      <!-- Top menu -->
+      <div class="sidebar">
+        <!-- menu text -->
+        <div class="menu">
+          <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="menu_picture">
+          <h3>The Python Book</h3>
+          <p><i>Finally, a companion book for the 90's!</i></p>
+        </div>
+        <!-- menu item -->
+      </div>
+    </div>
+    <script>
+
+    </script>
+    <!-- END SIDEBAR BLOCK -->
   </body>
 </html>
