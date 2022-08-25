@@ -21,8 +21,8 @@ body {
   }
   .wrapper .sidebar .menu img{
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 40%;
+    height: 40%;
     border-radius: 0%;
     margin: 0 auto;
   }
@@ -34,12 +34,41 @@ body {
     color: #fff;
     font-size: 14px;
   }
+  /* START SIDEMENU ITEM FORMATTING */
+  .wrapper .sidebar ul li a{
+    display: block;
+    padding: 4px 0px;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+      position: relative;
+  }
+  .wrapper .sidebar ul li a .icon{
+      color: #dee4ec;
+      width: 30px;
+      display: inline-block;
+  }
+  /* .wrapper .sidebar ul li a:hover,
+  .wrapper .sidebar ul li a.active{
+      color: #0c7db1;
+
+      background:white;
+      border-right: 2px solid rgb(5, 68, 104);
+  } */
+  /* .wrapper .sidebar ul li a:hover .icon,
+  .wrapper .sidebar ul li a.active .icon{
+      color: #0c7db1;
+  }
+  .wrapper .sidebar ul li a:hover:before,
+  .wrapper .sidebar ul li a.active:before{
+      display: block;
+  } */
+  /* END SIDEMENU ITEM FORMATTING */
   /* END SIDEBAR BLOCK */
   /*
    * Formatting the header area
    */
   header {
-    background-color: #424242;
+    background-color: #fff;
     height: 35px;
     width: 100%;
     opacity: .9;
@@ -48,17 +77,27 @@ body {
   header h1.logo {
     margin: 0;
     font-size: 1.7em;
-    color: #fff;
+    color: #424242;
     text-transform: uppercase;
-    float: left;
+    /* 
+    Note: 
+    Using "float: left" makes the header (and links) 
+    all show up on the "header". Using "text-align: center"
+    causes the links to show up in the "body content"
+    but it makes the header show up in the center as I want. Hmm.
+    */
+    /* float: left; */
+    text-align: center;
   }
-  header h1.logo:hover {
+  /* Hover effects, most likely would not want this. */
+  /* header h1.logo:hover {
     color: #fff;
     text-decoration: none;
-  }
+  } */
   /*
    * Centering the body content
    */
+  /* This is the grey text box ....  */
   .container {
     width: 1200px;
     margin: 0 auto;
@@ -71,6 +110,7 @@ body {
        -moz-border-radius: 6px;
             border-radius: 6px;
   }
+  /* This may be useless, unsure that it controls anything ATM. */
   div.contacts {
     padding: 10px 0 30px 0;
     background-color: #E6E6FA;
@@ -93,18 +133,18 @@ body {
     color: #999;
   }
   /* Placement of "header bar" menu elements. */
-  .menu {
+  .header-menu {
     float: right;
     margin-top: 8px;
   }
-  .menu li {
+  .header-menu li {
     display: inline;
   }
-  .menu li + li {
+  .header-menu li + li {
     margin-left: 35px;
   }
   /* Affects the elements in the "header" bar (i.e. "Home" and "Contacts" links) */
-  .menu li a {
-    color: rgb(255, 255, 255);
+  .header-menu li a {
+    color: #fff;
     text-decoration: none;
   }
